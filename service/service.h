@@ -40,6 +40,8 @@ public:
     //send a massage to client
     static int send_msg(const int sock,string massage);
 
+    static int close_sock(int sock);
+
 private:
 
     string Ip;
