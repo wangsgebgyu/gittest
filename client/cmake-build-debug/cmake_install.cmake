@@ -1,4 +1,4 @@
-# Install script for directory: /home/hezhnegbo/桌面/untitled2
+# Install script for directory: /home/hezhnegbo/桌面/ggit/testgit/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hezhnegbo/桌面/untitled2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hezhnegbo/桌面/ggit/testgit/client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/hezhnegbo/桌面/untitled2/cmake-build-debug"
+			"value" : "/home/hezhnegbo/桌面/ggit/testgit/service/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/hezhnegbo/桌面/untitled2"
+			"value" : "/home/hezhnegbo/桌面/ggit/testgit/service"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "untitled2"
+			"value" : "untitled1"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1102,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "untitled2_BINARY_DIR",
+			"name" : "untitled1_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,10 +1111,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/hezhnegbo/桌面/untitled2/cmake-build-debug"
+			"value" : "/home/hezhnegbo/桌面/ggit/testgit/service/cmake-build-debug"
 		},
 		{
-			"name" : "untitled2_IS_TOP_LEVEL",
+			"name" : "untitled1_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1126,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "untitled2_SOURCE_DIR",
+			"name" : "untitled1_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/hezhnegbo/桌面/untitled2"
+			"value" : "/home/hezhnegbo/桌面/ggit/testgit/service"
 		}
 	],
 	"kind" : "cache",
