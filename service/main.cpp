@@ -1,29 +1,24 @@
-#include <iostream>
-#include <sys/socket.h>
-#include <netinet/in.h>
+#include <sys/poll.h>
 #include "service.h"
 
 using namespace std;
+#define MAX 10
 
 int main(int len, char *args[]) {
 
     int l_socket;
+    //create a listen socket:l_socket
+    l_socket = Service::create_service_socket(0, args[1], TCP, 2);
 
-    l_socket = Service::create_service_socket(0, args[1], TCP, 10);
+    //select_pack pack = Select::Init_select(l_socket);
+    struct timeval tv = {5, 0};
+    //Select::Apply_select(pack,tv,Service::send_msg,Service::get_msg);
 
-    svc_client clien = Service::get_client_socket(l_socket);
+    //poll_pack pollPack = Poll::Init_poll(l_socket, 10);
+    //Poll::Aplly_poll(pollPack,tv,Service::send_msg,Service::get_msg);
 
-    msg_package massage = Service::get_msg(clien.client_socket, 20);
+    Epoll::Init_epoll(l_socket,10,10,Service::send_msg,Service::get_msg);
 
-    cout << massage.msg << endl;
-    cout << massage.flag << endl;
-
-    int fl = Service::send_msg(clien.client_socket, "22222222");
-
-    cout << fl << endl;
-
-
-    int a;
-    cin >> a;
     return 0;
 }
+

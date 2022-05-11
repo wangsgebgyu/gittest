@@ -3,6 +3,7 @@
 //
 
 
+
 #include "clien.h"
 
 
@@ -64,4 +65,9 @@ int Clien::send_msg(const int clien_sock, string massage) {
         return -1;
     }
     return 0;
+}
+
+int Clien::close_sock(int sock) {
+    close(sock);
+    return 1;
 }

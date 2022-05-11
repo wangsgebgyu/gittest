@@ -9,6 +9,7 @@
 #include <iostream>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <unistd.h>
 using namespace std;
 
 #define TCP 1
@@ -23,13 +24,11 @@ class Clien{
 public:
     static int create_connect(const string ip,const string port,int type);
 
-
     static int send_msg(const int clien_sock, string massage);
 
     static massage get_msg(const int sock, int msg_size);
+
+    static int close_sock(int sock);
 };
-
-
-
 
 #endif //UNTITLED2_CLIEN_H
