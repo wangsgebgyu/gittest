@@ -11,7 +11,7 @@ int main(int len, char *args[]) {
     l_socket = Service::create_service_socket(0, args[1], TCP, 2);
 
     //select_pack pack = Select::Init_select(l_socket);
-    struct timeval tv = {5, 0};
+    //struct timeval tv = {5, 0};
     //Select::Apply_select(pack,tv,Service::send_msg,Service::get_msg);
 
     //poll_pack pollPack = Poll::Init_poll(l_socket, 10);

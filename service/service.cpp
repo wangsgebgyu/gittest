@@ -214,10 +214,12 @@ void
 Epoll::Init_epoll(const int l_socket, const int fd_epoll_size, const int max_evnet, int (*send_msg)(const int, string),
                   msg_package (*get_msg)(const int, int)) {
     int epoll_fd = epoll_create(fd_epoll_size);
+
     struct epoll_event ev;
     ev.data.fd = l_socket;
     ev.events = EPOLLIN;
     epoll_ctl(epoll_fd, EPOLL_CTL_ADD, l_socket, &ev);
+
     while (1) {
         struct epoll_event events[fd_epoll_size];
         int infds = epoll_wait(epoll_fd, events, max_evnet, -1);
