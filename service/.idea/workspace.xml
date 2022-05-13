@@ -11,21 +11,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ab15d6-b8af-4df2-9931-8e788b868a8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/clien.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/clien.h" afterDir="false" />
+    <list default="true" id="90ab15d6-b8af-4df2-9931-8e788b868a8a" name="Changes" comment="commit select,poll and epoll">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../client/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e4374bf7d4675e2f161f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-10T09-35-34-0724.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/target-untitled2-Debug-9ce6c2585207306cabc2.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/clien.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/clien.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/home/hezhnegbo/桌面/ggit/testgit/service/service.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/home/hezhnegbo/桌面/ggit/testgit/service/service.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/untitled2.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../client/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/untitled2" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/untitled2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled1.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled1.dir/service.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled1.dir/service.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/untitled1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/untitled1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shareMem/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../shareMem/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +81,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="service" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="5005" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled1" TARGET_NAME="untitled1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled1" RUN_TARGET_NAME="untitled1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -99,8 +96,19 @@
       <option name="presentableId" value="Default" />
       <updated>1652163438803</updated>
       <workItem from="1652163444311" duration="6868000" />
-      <workItem from="1652175111512" duration="9033000" />
+      <workItem from="1652175111512" duration="20545000" />
+      <workItem from="1652249392527" duration="12837000" />
+      <workItem from="1652273802215" duration="129000" />
+      <workItem from="1652403589901" duration="2000" />
     </task>
+    <task id="LOCAL-00001" summary="commit select,poll and epoll">
+      <created>1652260838859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652260838859</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,5 +124,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit select,poll and epoll" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit select,poll and epoll" />
   </component>
 </project>

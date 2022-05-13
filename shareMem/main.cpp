@@ -2,7 +2,7 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <unistd.h>
-
+#include <semaphore.h>
 using namespace std;
 
 
@@ -13,6 +13,8 @@ public:
     int m_age;
     int m_flag ;
 };
+
+sem_t sem ;
 
 int main() {
     //ipcs -m
@@ -27,8 +29,12 @@ int main() {
 
     cout << p[0].m_age << endl;
     cout << p[0].m_flag << endl;
-
-    sleep(300);
+    sem_init(&sem,1,1);
+    sem_wait(&sem);
+    cout << "i have a sem" << endl;
+    sleep(30);
+    sem_post(&sem);
+    cout << "i have not sem" << endl;
     shmdt(p);
     shmctl(shm_id,IPC_RMID,NULL);
     return 0;
